@@ -5,6 +5,8 @@ void main() {
 }
 
 class NoteKeeperApp extends StatelessWidget {
+  const NoteKeeperApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +18,10 @@ class NoteKeeperApp extends StatelessWidget {
 }
 
 class NotesScreen extends StatefulWidget {
+  const NotesScreen({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _NotesScreenState createState() => _NotesScreenState();
 }
 
@@ -69,6 +74,8 @@ class _NotesScreenState extends State<NotesScreen> {
 
 class AddNoteScreen extends StatelessWidget {
   final TextEditingController controller = TextEditingController();
+
+  AddNoteScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
